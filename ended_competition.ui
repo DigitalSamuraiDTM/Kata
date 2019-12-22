@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ended_competition</class>
+ <widget class="QWidget" name="ended_competition">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1015</width>
+    <height>612</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Calibri</family>
+    <pointsize>12</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Мероприятие</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2" rowstretch="0,0" columnstretch="0">
+   <item row="1" column="0">
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>Соревнования</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QGroupBox" name="groupBox">
+           <property name="title">
+            <string>Основная информация</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <widget class="QLabel" name="name_competition">
+              <property name="text">
+               <string>Название соревнований: </string>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="data_copetition">
+              <property name="text">
+               <string>Дата проведения: </string>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="place_competition">
+              <property name="text">
+               <string>Место проведения: </string>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="main_judge_competition">
+              <property name="text">
+               <string>Главный судья: </string>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="main_secretary_competiotion">
+              <property name="text">
+               <string>Главный секретарь: </string>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="deputy_main_judge_competition">
+              <property name="text">
+               <string>Заместитель главного судьи: </string>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="oldes_judge_competition">
+              <property name="text">
+               <string>Старший судья: </string>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_2">
+           <property name="title">
+            <string>Дополнительная информация</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+             <widget class="QLabel" name="mem_count">
+              <property name="text">
+               <string>Всего участников: </string>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="judges_count">
+              <property name="text">
+               <string>Всего судей: </string>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="1">
+          <widget class="QGroupBox" name="citys_box">
+           <property name="title">
+            <string>Городов</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_4">
+            <item row="1" column="0">
+             <widget class="QTextEdit" name="citys"/>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QGroupBox" name="subjects_box">
+           <property name="title">
+            <string>Субъектов</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_3">
+            <item row="1" column="0">
+             <widget class="QTextEdit" name="subjetcts"/>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>Участники и победители</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_6">
+       <item row="0" column="0">
+        <layout class="QGridLayout" name="gridLayout_5">
+         <item row="5" column="0">
+          <widget class="QTableView" name="members_view"/>
+         </item>
+         <item row="3" column="0" rowspan="2">
+          <layout class="QGridLayout" name="gridLayout_7">
+           <item row="1" column="1">
+            <widget class="QPushButton" name="generate_all_members">
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+background-color: #e2e2e2;
+border:1px solid #afafaf;
+}
+QPushButton:hover{
+background-color: #E0F2FF;
+border-color: #80C8FF;
+}
+QPushButton:pressed{
+background-color: #C2E4FF;
+border-color: #80C8FF;
+}</string>
+             </property>
+             <property name="text">
+              <string>Создать список всех участников</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QComboBox" name="sorting_mem_box">
+             <item>
+              <property name="text">
+               <string>Без сортировки</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>По местам</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>По фамилии</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>По имени</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>По возрасту</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QPushButton" name="generate_out_members">
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+background-color: #e2e2e2;
+border:1px solid #afafaf;
+}
+QPushButton:hover{
+background-color: #E0F2FF;
+border-color: #80C8FF;
+}
+QPushButton:pressed{
+background-color: #C2E4FF;
+border-color: #80C8FF;
+}</string>
+             </property>
+             <property name="text">
+              <string>Создать справку по турниру</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QComboBox" name="asc_desc_mem_box">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <item>
+              <property name="text">
+               <string>По возрастанию</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>По убыванию</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QPushButton" name="history_member">
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+background-color: #e2e2e2;
+border:1px solid #afafaf;
+}
+QPushButton:hover{
+background-color: #E0F2FF;
+border-color: #80C8FF;
+}
+QPushButton:pressed{
+background-color: #C2E4FF;
+border-color: #80C8FF;
+}</string>
+             </property>
+             <property name="text">
+              <string>История участника</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QComboBox" name="categorys_box">
+             <item>
+              <property name="text">
+               <string>Все</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QPushButton" name="catgegories_out">
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+background-color: #e2e2e2;
+border:1px solid #afafaf;
+}
+QPushButton:hover{
+background-color: #E0F2FF;
+border-color: #80C8FF;
+}
+QPushButton:pressed{
+background-color: #C2E4FF;
+border-color: #80C8FF;
+}</string>
+             </property>
+             <property name="text">
+              <string>Отчет категории</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="title">
+       <string>Судьи</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_9">
+       <item row="0" column="0">
+        <layout class="QGridLayout" name="gridLayout_8">
+         <item row="6" column="0">
+          <widget class="QTableView" name="judges_view"/>
+         </item>
+         <item row="3" column="0">
+          <layout class="QGridLayout" name="gridLayout_10">
+           <item row="1" column="0">
+            <widget class="QComboBox" name="comboBox_2">
+             <item>
+              <property name="text">
+               <string>Без сортировки</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>По фамилии</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>По имени</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>По бригаде</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>По городу</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QComboBox" name="comboBox">
+             <item>
+              <property name="text">
+               <string>Бригада</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QPushButton" name="generate_out_judges">
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+background-color: #e2e2e2;
+border:1px solid #afafaf;
+}
+QPushButton:hover{
+background-color: #E0F2FF;
+border-color: #80C8FF;
+}
+QPushButton:pressed{
+background-color: #C2E4FF;
+border-color: #80C8FF;
+}</string>
+             </property>
+             <property name="text">
+              <string>Создать отчёт по судьям</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QComboBox" name="asc_desc_judge">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <item>
+              <property name="text">
+               <string>По возрастанию</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>По убыванию</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_4">
+      <attribute name="title">
+       <string>Категории</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_11">
+       <item row="0" column="0">
+        <widget class="QTableView" name="categorys_view"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_5">
+      <attribute name="title">
+       <string>Удаление мероприятия</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_12">
+       <item row="0" column="0">
+        <widget class="QPushButton" name="DELETE">
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>500</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+background-color: #e2e2e2;
+border:1px solid #afafaf;
+}
+QPushButton:hover{
+background-color: #E0F2FF;
+border-color: #80C8FF;
+}
+QPushButton:pressed{
+background-color: #C2E4FF;
+border-color: #80C8FF;
+}</string>
+         </property>
+         <property name="text">
+          <string>Удалить мероприятие</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

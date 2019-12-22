@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Fight</class>
+ <widget class="QWidget" name="Fight">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1013</width>
+    <height>579</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Соревнования</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="font">
+      <font>
+       <family>Calibri</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="title">
+       <string>Соревнования</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0">
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="2" column="0">
+          <widget class="QPushButton" name="start_loop">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>200</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="font">
+            <font/>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+background-color: #e2e2e2;
+border:1px solid #afafaf;
+}
+QPushButton:hover{
+background-color: #E0F2FF;
+border-color: #80C8FF;
+}
+QPushButton:pressed{
+background-color: #C2E4FF;
+border-color: #80C8FF;
+}</string>
+           </property>
+           <property name="text">
+            <string>Начать круг</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>25</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="4" column="0">
+          <widget class="QPushButton" name="out_member">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>200</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+background-color: #e2e2e2;
+border:1px solid #afafaf;
+}
+QPushButton:hover{
+background-color: #FDEDED;
+border-color: #EB3028;
+}
+QPushButton:pressed{
+background-color: #F7B7B6;
+border-color: #EB3028;
+}</string>
+           </property>
+           <property name="text">
+            <string>Исключить участника</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1" rowspan="9" colspan="2">
+          <widget class="QTableView" name="view_fighters">
+           <property name="font">
+            <font>
+             <family>Calibri</family>
+             <pointsize>11</pointsize>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="0">
+          <widget class="QPushButton" name="end_category">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>200</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="font">
+            <font/>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+background-color: #e2e2e2;
+border:1px solid #afafaf;
+}
+QPushButton:hover{
+background-color: #E0F2FF;
+border-color: #80C8FF;
+}
+QPushButton:pressed{
+background-color: #C2E4FF;
+border-color: #80C8FF;
+}</string>
+           </property>
+           <property name="text">
+            <string>Завершить категорию</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QComboBox" name="categories">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Calibri</family>
+             <pointsize>11</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="0">
+          <widget class="QPushButton" name="end_loop">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>200</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="font">
+            <font/>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+background-color: #e2e2e2;
+border:1px solid #afafaf;
+}
+QPushButton:hover{
+background-color: #E0F2FF;
+border-color: #80C8FF;
+}
+QPushButton:pressed{
+background-color: #C2E4FF;
+border-color: #80C8FF;
+}</string>
+           </property>
+           <property name="text">
+            <string>Завершить круг</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <spacer name="verticalSpacer_2">
+           <property name="font">
+            <font>
+             <family>Calibri</family>
+             <pointsize>11</pointsize>
+            </font>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="3" column="0">
+          <widget class="QPushButton" name="count_member">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>200</width>
+             <height>45</height>
+            </size>
+           </property>
+           <property name="font">
+            <font/>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+background-color: #e2e2e2;
+border:1px solid #afafaf;
+}
+QPushButton:hover{
+background-color: #EDFDF0;
+border-color: #10DA20;
+}
+QPushButton:pressed{
+background-color: #CCFAD2;
+border-color: #10DA20;
+}</string>
+           </property>
+           <property name="text">
+            <string>Оценить участника</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="label_FIO">
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Фамилия Имя Отчество</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>Участники и категории</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="0" column="0">
+        <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,0">
+         <item>
+          <layout class="QGridLayout" name="gridLayout_5">
+           <item row="0" column="0" rowspan="2">
+            <widget class="QComboBox" name="categories_box">
+             <property name="font">
+              <font>
+               <family>Calibri</family>
+               <pointsize>11</pointsize>
+              </font>
+             </property>
+             <item>
+              <property name="text">
+               <string>Все</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QComboBox" name="sorting_box">
+             <item>
+              <property name="text">
+               <string>Без сортировки</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>По местам</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>По фамилии</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>По имени</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>По возрасту</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QComboBox" name="desc_asc_box">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <item>
+              <property name="text">
+               <string>По возрастанию</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>По убыванию</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QPushButton" name="history_member">
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+background-color: #e2e2e2;
+border:1px solid #afafaf;
+}
+QPushButton:hover{
+background-color: #E0F2FF;
+border-color: #80C8FF;
+}
+QPushButton:pressed{
+background-color: #C2E4FF;
+border-color: #80C8FF;
+}</string>
+             </property>
+             <property name="text">
+              <string>История участника</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QTableView" name="view_members">
+           <property name="font">
+            <font>
+             <family>Calibri</family>
+             <pointsize>11</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_4">
+      <attribute name="title">
+       <string>Разделение категорий</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <layout class="QGridLayout" name="gridLayout_8">
+         <item row="0" column="0">
+          <widget class="QPushButton" name="load_ended_category">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>500</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+background-color: #e2e2e2;
+border:1px solid #afafaf;
+}
+QPushButton:hover{
+background-color: #E0F2FF;
+border-color: #80C8FF;
+}
+QPushButton:pressed{
+background-color: #C2E4FF;
+border-color: #80C8FF;
+}</string>
+           </property>
+           <property name="text">
+            <string>Загрузить законченные категории</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPushButton" name="create_ended_category">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>500</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+background-color: #e2e2e2;
+border:1px solid #afafaf;
+}
+QPushButton:hover{
+background-color: #E0F2FF;
+border-color: #80C8FF;
+}
+QPushButton:pressed{
+background-color: #C2E4FF;
+border-color: #80C8FF;
+}</string>
+           </property>
+           <property name="text">
+            <string>Сформировать законченные категории</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>Конец соревнований</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_7">
+       <item row="0" column="0">
+        <layout class="QGridLayout" name="gridLayout_6">
+         <item row="0" column="0">
+          <widget class="QPushButton" name="end_competition">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>350</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+background-color: #e2e2e2;
+border:1px solid #afafaf;
+}
+QPushButton:hover{
+background-color: #EDFDF0;
+border-color: #10DA20;
+}
+QPushButton:pressed{
+background-color: #CCFAD2;
+border-color: #10DA20;
+}</string>
+           </property>
+           <property name="text">
+            <string>Закончить соревнования</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

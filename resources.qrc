@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/new/prefix1"/>
+    <qresource prefix="/">
+        <file>../build-Kata_ver_X-Desktop_Qt_5_13_0_MinGW_64_bit-Release/release/bonsai.png</file>
+    </qresource>
+</RCC>

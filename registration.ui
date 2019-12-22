@@ -1,0 +1,2115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Registration</class>
+ <widget class="QWidget" name="Registration">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1068</width>
+    <height>544</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Регистрация</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="font">
+      <font>
+       <family>Calibri</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>Соревнования</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="1" column="0">
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="6" column="0">
+          <widget class="QLabel" name="label_6">
+           <property name="font">
+            <font>
+             <family>Calibri</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Старший судья</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="1" colspan="2">
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QGroupBox" name="groupBox">
+             <property name="font">
+              <font>
+               <family>Calibri</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="title">
+              <string>Субъекты</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_14">
+                <item>
+                 <widget class="QLabel" name="label_12">
+                  <property name="font">
+                   <font>
+                    <family>Calibri</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Количество субъектов</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSpinBox" name="number_subjects">
+                  <property name="font">
+                   <font>
+                    <family>Calibri</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QTextEdit" name="subjects">
+                <property name="font">
+                 <font>
+                  <family>Calibri</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="documentTitle">
+                 <string/>
+                </property>
+                <property name="placeholderText">
+                 <string>Субъекты,области, автономные округа, края и т.д.</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="groupBox_2">
+             <property name="font">
+              <font>
+               <family>Calibri</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="title">
+              <string>Города</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_2">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_15">
+                <item>
+                 <widget class="QLabel" name="label_13">
+                  <property name="font">
+                   <font>
+                    <family>Calibri</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Количество городов</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSpinBox" name="number_cities">
+                  <property name="font">
+                   <font>
+                    <family>Calibri</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QTextEdit" name="cities">
+                <property name="font">
+                 <font>
+                  <family>Calibri</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="placeholderText">
+                 <string>Екатеринбург, Москва, Санкт-Петербург и т.д.</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="label_8">
+           <property name="font">
+            <font>
+             <family>Calibri</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Главный секретарь</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="0">
+          <widget class="QLabel" name="label_4">
+           <property name="font">
+            <font>
+             <family>Calibri</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Заместитель главного судьи</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_2">
+           <property name="font">
+            <font>
+             <family>Calibri</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Дата проведения</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="0">
+          <widget class="QLabel" name="label">
+           <property name="font">
+            <font>
+             <family>Calibri</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Количество субъектов, городов</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_3">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>220</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Calibri</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Название соревнований</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_7">
+           <property name="font">
+            <font>
+             <family>Calibri</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Главный судья</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QPushButton" name="get_competiton_data">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="font">
+            <font/>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+background-color: #e2e2e2;
+border:1px solid #afafaf;
+}
+QPushButton:hover{
+background-color: #E0F2FF;
+border-color: #80C8FF;
+}
+QPushButton:pressed{
+background-color: #C2E4FF;
+border-color: #80C8FF;
+}</string>
+           </property>
+           <property name="text">
+            <string>Выбрать дату</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1" colspan="2">
+          <widget class="QLineEdit" name="competition_place">
+           <property name="font">
+            <font>
+             <family>Calibri</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="maxLength">
+            <number>99</number>
+           </property>
+           <property name="placeholderText">
+            <string>  Место проведения соревнований</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QDateEdit" name="competition_data">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Calibri</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_5">
+           <property name="font">
+            <font>
+             <family>Calibri</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Место проведения</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1" colspan="2">
+          <widget class="QLineEdit" name="competition_name">
+           <property name="font">
+            <font>
+             <family>Calibri</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="maxLength">
+            <number>99</number>
+           </property>
+           <property name="placeholderText">
+            <string> Название соревнований</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1" colspan="2">
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QLineEdit" name="judge_main">
+             <property name="placeholderText">
+              <string> Фамилия Имя Отчество</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="city_main_judge">
+             <property name="placeholderText">
+              <string> Город</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="category_main_judge">
+             <property name="placeholderText">
+              <string>Судейская категория</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="kval_main_judge">
+             <property name="placeholderText">
+              <string>1 Дан</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="5" column="1" colspan="2">
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QLineEdit" name="secretary_main">
+             <property name="placeholderText">
+              <string> Фамилия Имя Отчество</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="city_secretary_main">
+             <property name="placeholderText">
+              <string> Город</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="category_secretary_main">
+             <property name="placeholderText">
+              <string> Судейская категория</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="kval_main_secretary">
+             <property name="placeholderText">
+              <string>2 Дан</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="6" column="1" colspan="2">
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="QLineEdit" name="judge_senior">
+             <property name="placeholderText">
+              <string> Фамилия Имя Отчество</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="city_judge_senior">
+             <property name="placeholderText">
+              <string> Город</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="category_jusge_senior">
+             <property name="placeholderText">
+              <string> Судейская категория</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="kval_senior_judge">
+             <property name="placeholderText">
+              <string>1 Кю</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="7" column="1" colspan="2">
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <item>
+            <widget class="QLineEdit" name="deputy_judge_main">
+             <property name="placeholderText">
+              <string> Фамилия Имя Отчество</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="city_deputy_judge">
+             <property name="placeholderText">
+              <string> Город</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="category_deputy_judge">
+             <property name="placeholderText">
+              <string> Судейская категория</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="kval_deputy_judge">
+             <property name="placeholderText">
+              <string>6 Дан</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>Добавление участников/судей</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_6">
+       <item row="0" column="0">
+        <layout class="QVBoxLayout" name="verticalLayout_8" stretch="0,0">
+         <item>
+          <layout class="QGridLayout" name="gridLayout_7" columnstretch="0,0">
+           <item row="2" column="0">
+            <widget class="QPushButton" name="load_members">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>250</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="font">
+              <font/>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+background-color: #e2e2e2;
+border:1px solid #afafaf;
+}
+QPushButton:hover{
+background-color: #E0F2FF;
+border-color: #80C8FF;
+}
+QPushButton:pressed{
+background-color: #C2E4FF;
+border-color: #80C8FF;
+}</string>
+             </property>
+             <property name="text">
+              <string>Загрузить участников/судей</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QPushButton" name="save_data">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>250</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="font">
+              <font/>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+background-color: #e2e2e2;
+border:1px solid #afafaf;
+}
+QPushButton:hover{
+background-color: #E0F2FF;
+border-color: #80C8FF;
+}
+QPushButton:pressed{
+background-color: #C2E4FF;
+border-color: #80C8FF;
+}</string>
+             </property>
+             <property name="text">
+              <string>Сохранить данные в базе</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QTableView" name="loading_members">
+           <property name="font">
+            <font>
+             <family>Calibri</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <attribute name="verticalHeaderHighlightSections">
+            <bool>false</bool>
+           </attribute>
+           <attribute name="verticalHeaderStretchLastSection">
+            <bool>false</bool>
+           </attribute>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="title">
+       <string>Категории</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="0" column="0">
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <layout class="QGridLayout" name="gridLayout_5">
+           <item row="0" column="0">
+            <widget class="QGroupBox" name="age">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>200</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Calibri</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="title">
+              <string>Возраст</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_5">
+              <item>
+               <widget class="QLineEdit" name="age_from">
+                <property name="font">
+                 <font>
+                  <family>Calibri</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="placeholderText">
+                 <string>  От</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="age_to">
+                <property name="font">
+                 <font>
+                  <family>Calibri</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="placeholderText">
+                 <string>  До (включительно)</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QPushButton" name="load_template">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>200</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="font">
+              <font/>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+background-color: #e2e2e2;
+border:1px solid #afafaf;
+}
+QPushButton:hover{
+background-color: #E0F2FF;
+border-color: #80C8FF;
+}
+QPushButton:pressed{
+background-color: #C2E4FF;
+border-color: #80C8FF;
+}</string>
+             </property>
+             <property name="text">
+              <string>Загрузить шаблон</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QPushButton" name="delete_all_category">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>200</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="font">
+              <font/>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+background-color: #e2e2e2;
+border:1px solid #afafaf;
+}
+QPushButton:hover{
+background-color: #E0F2FF;
+border-color: #80C8FF;
+}
+QPushButton:pressed{
+background-color: #C2E4FF;
+border-color: #80C8FF;
+}</string>
+             </property>
+             <property name="text">
+              <string>Удалить все категории</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QGroupBox" name="kval_value">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>200</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Calibri</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="toolTip">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Категории должны быть выставлены по стандарту квалифакций:&lt;/p&gt;&lt;p&gt;1) КЮ - {0,11,10,9,8,7,6,5,4,3,2,1}&lt;/p&gt;&lt;p&gt;2)ДАН - {1,2,3,4,5,6,7,8,9,10}&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="toolTipDuration">
+              <number>0</number>
+             </property>
+             <property name="title">
+              <string>Степень квалификации</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_4">
+              <item>
+               <widget class="QLineEdit" name="kval_from">
+                <property name="font">
+                 <font>
+                  <family>Calibri</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="placeholderText">
+                 <string>  От</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="kval_to">
+                <property name="font">
+                 <font>
+                  <family>Calibri</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="placeholderText">
+                 <string>  До (включительно)</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QPushButton" name="save_template">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>200</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="font">
+              <font/>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+background-color: #e2e2e2;
+border:1px solid #afafaf;
+}
+QPushButton:hover{
+background-color: #E0F2FF;
+border-color: #80C8FF;
+}
+QPushButton:pressed{
+background-color: #C2E4FF;
+border-color: #80C8FF;
+}</string>
+             </property>
+             <property name="text">
+              <string>Сохранить шаблон</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QGroupBox" name="kval_type">
+             <property name="minimumSize">
+              <size>
+               <width>200</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Calibri</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="title">
+              <string>Квалификация</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_7">
+              <item>
+               <widget class="QRadioButton" name="kval_dan">
+                <property name="font">
+                 <font>
+                  <family>Calibri</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="toolTip">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Степень квалификации выставлять по стандарту квалификации.&lt;/p&gt;&lt;p&gt; Для ДАН квалификация выглядит так:&lt;/p&gt;&lt;p&gt; {1,2,3,4,5,6,7,8,9,10}&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+                <property name="toolTipDuration">
+                 <number>0</number>
+                </property>
+                <property name="text">
+                 <string>Дан</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="kval_ku">
+                <property name="font">
+                 <font>
+                  <family>Calibri</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="toolTip">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Степень квалификации выставлять по стандарту квалификации.&lt;/p&gt;&lt;p&gt;Для КЮ квалификация выглядит так:&lt;/p&gt;&lt;p&gt;{0,11,10,9,8,7,5,4,3,2,1}&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+                <property name="toolTipDuration">
+                 <number>0</number>
+                </property>
+                <property name="text">
+                 <string>Кю</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QGroupBox" name="gender">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>200</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Calibri</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="title">
+              <string>Пол</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_6">
+              <item>
+               <widget class="QRadioButton" name="gender_M">
+                <property name="font">
+                 <font>
+                  <family>Calibri</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>М</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="gender_J">
+                <property name="font">
+                 <font>
+                  <family>Calibri</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Ж</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="0" column="4">
+            <widget class="QPushButton" name="add_category">
+             <property name="minimumSize">
+              <size>
+               <width>200</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="font">
+              <font/>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+background-color: #e2e2e2;
+border:1px solid #afafaf;
+}
+QPushButton:hover{
+background-color: #E0F2FF;
+border-color: #80C8FF;
+}
+QPushButton:pressed{
+background-color: #C2E4FF;
+border-color: #80C8FF;
+}</string>
+             </property>
+             <property name="text">
+              <string>Создать категорию</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QPushButton" name="delete_category">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>200</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="font">
+              <font/>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+background-color: #e2e2e2;
+border:1px solid #afafaf;
+}
+QPushButton:hover{
+background-color: #E0F2FF;
+border-color: #80C8FF;
+}
+QPushButton:pressed{
+background-color: #C2E4FF;
+border-color: #80C8FF;
+}</string>
+             </property>
+             <property name="text">
+              <string>Удалить категорию</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="3">
+            <widget class="QPushButton" name="push_category_to_tatami">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>200</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Для активации функции необходимо:&lt;/p&gt;&lt;p&gt;1) Все участники распределены по категориям&lt;/p&gt;&lt;p&gt;2) Создана таблица оценивания участника&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="toolTipDuration">
+              <number>0</number>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+background-color: #e2e2e2;
+border:1px solid #afafaf;
+}
+QPushButton:hover{
+background-color: #E0F2FF;
+border-color: #80C8FF;
+}
+QPushButton:pressed{
+background-color: #C2E4FF;
+border-color: #80C8FF;
+}</string>
+             </property>
+             <property name="text">
+              <string>Разделение категорий</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="4">
+            <widget class="QPushButton" name="push_category_to_members">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>200</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="font">
+              <font/>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+background-color: #e2e2e2;
+border:1px solid #afafaf;
+}
+QPushButton:hover{
+background-color: #E0F2FF;
+border-color: #80C8FF;
+}
+QPushButton:pressed{
+background-color: #C2E4FF;
+border-color: #80C8FF;
+}</string>
+             </property>
+             <property name="text">
+              <string>Распределить категории</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QTableView" name="view_all_categorys">
+           <property name="font">
+            <font>
+             <family>Calibri</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="dragDropMode">
+            <enum>QAbstractItemView::NoDragDrop</enum>
+           </property>
+           <property name="textElideMode">
+            <enum>Qt::ElideLeft</enum>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_6">
+      <attribute name="title">
+       <string>Судьи</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_12">
+       <item row="0" column="1">
+        <layout class="QGridLayout" name="gridLayout_11" rowstretch="0,0,0,1" rowminimumheight="0,0,0,0">
+         <item row="3" column="0">
+          <widget class="QTableView" name="view_all_judges">
+           <property name="font">
+            <font>
+             <family>Calibri</family>
+             <pointsize>11</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <layout class="QGridLayout" name="gridLayout_13">
+           <item row="0" column="3" colspan="2">
+            <widget class="QGroupBox" name="groupBox_4">
+             <property name="title">
+              <string>Город и судейская категория</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_17">
+              <item>
+               <widget class="QLineEdit" name="city_judge">
+                <property name="placeholderText">
+                 <string>  Город</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="judges_category">
+                <property name="placeholderText">
+                 <string>  Судейская категория</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QPushButton" name="delete_judge">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>200</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Для удаления судьи выделите полную строку&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="toolTipDuration">
+              <number>0</number>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+background-color: #e2e2e2;
+border:1px solid #afafaf;
+}
+QPushButton:hover{
+background-color: #E0F2FF;
+border-color: #80C8FF;
+}
+QPushButton:pressed{
+background-color: #C2E4FF;
+border-color: #80C8FF;
+}</string>
+             </property>
+             <property name="text">
+              <string>Удалить судью</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0" colspan="2">
+            <widget class="QGroupBox" name="groupBox_5">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>400</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="title">
+              <string>ФИО</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_18">
+              <item>
+               <widget class="QLineEdit" name="last_name_judge">
+                <property name="placeholderText">
+                 <string>  Фамилия</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="fitst_name_judge">
+                <property name="placeholderText">
+                 <string>  Имя</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="patron_name_judge">
+                <property name="placeholderText">
+                 <string> Отчество</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QGroupBox" name="groupBox_3">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="title">
+              <string>Квалификация</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_16">
+              <item>
+               <widget class="QRadioButton" name="type_kval_judge_KU">
+                <property name="text">
+                 <string>Кю</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="type_kval_judge_DAN">
+                <property name="text">
+                 <string>Дан</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_19">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="label_14">
+                  <property name="text">
+                   <string>Степень</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSpinBox" name="value_kval_judge"/>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QPushButton" name="add_judge">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>200</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+background-color: #e2e2e2;
+border:1px solid #afafaf;
+}
+QPushButton:hover{
+background-color: #E0F2FF;
+border-color: #80C8FF;
+}
+QPushButton:pressed{
+background-color: #C2E4FF;
+border-color: #80C8FF;
+}</string>
+             </property>
+             <property name="text">
+              <string>Добавить судью</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QPushButton" name="change_position_crew">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>200</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+background-color: #e2e2e2;
+border:1px solid #afafaf;
+}
+QPushButton:hover{
+background-color: #E0F2FF;
+border-color: #80C8FF;
+}
+QPushButton:pressed{
+background-color: #C2E4FF;
+border-color: #80C8FF;
+}</string>
+             </property>
+             <property name="text">
+              <string>Изменить должность/бригаду</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="4" rowspan="2">
+            <widget class="QPushButton" name="add_crew_judges">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>200</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="cursor">
+              <cursorShape>ArrowCursor</cursorShape>
+             </property>
+             <property name="layoutDirection">
+              <enum>Qt::LeftToRight</enum>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+background-color: #e2e2e2;
+border:1px solid #afafaf;
+}
+QPushButton:hover{
+background-color: #E0F2FF;
+border-color: #80C8FF;
+}
+QPushButton:pressed{
+background-color: #C2E4FF;
+border-color: #80C8FF;
+}</string>
+             </property>
+             <property name="text">
+              <string>Сформировать судейскую бригаду</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2" rowspan="2">
+            <layout class="QVBoxLayout" name="verticalLayout_20">
+             <item>
+              <widget class="QComboBox" name="crew_box">
+               <item>
+                <property name="text">
+                 <string>Бригада</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Без бригады</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="comboBox">
+               <item>
+                <property name="text">
+                 <string>Без сортировки</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>По фамилии</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>По имени</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>По бригаде</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>По городу</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="desc_asc_box">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <item>
+                <property name="text">
+                 <string>По возрастанию</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>По убыванию</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_4">
+      <attribute name="title">
+       <string>Оценка</string>
+      </attribute>
+      <widget class="QGroupBox" name="groupBox_7">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>30</y>
+         <width>171</width>
+         <height>201</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="title">
+        <string>Шаг</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_9">
+        <item>
+         <widget class="QRadioButton" name="step_01">
+          <property name="font">
+           <font>
+            <family>Calibri</family>
+            <pointsize>11</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>0.1</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="step_025">
+          <property name="font">
+           <font>
+            <family>Calibri</family>
+            <pointsize>11</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>0.25</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="step_05">
+          <property name="font">
+           <font>
+            <family>Calibri</family>
+            <pointsize>11</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>0.5</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="step_1">
+          <property name="font">
+           <font>
+            <family>Calibri</family>
+            <pointsize>11</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_8">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>30</y>
+         <width>161</width>
+         <height>201</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Отрезок</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_10">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_11">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>22</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_9">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>От</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="from_le">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_12">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>22</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_10">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>До</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="to_le">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="value">
+             <number>10</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QPushButton" name="generate_table">
+       <property name="geometry">
+        <rect>
+         <x>500</x>
+         <y>60</y>
+         <width>241</width>
+         <height>161</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font/>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Для активации функции необходимо:&lt;/p&gt;&lt;p&gt;1) Все участники распределены по категориям&lt;/p&gt;&lt;p&gt;2)Сгенерирована таблица оценивания участника&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="toolTipDuration">
+        <number>1</number>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+background-color: #e2e2e2;
+border:1px solid #afafaf;
+}
+QPushButton:hover{
+background-color: #E0F2FF;
+border-color: #80C8FF;
+}
+QPushButton:pressed{
+background-color: #C2E4FF;
+border-color: #80C8FF;
+}</string>
+       </property>
+       <property name="text">
+        <string>Посмотреть таблицу</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_11">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>250</y>
+         <width>651</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Обязательно посмотрите и проверьте таблицу. Изменять её тип после начала соревнований будет нельзя.</string>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_5">
+      <attribute name="title">
+       <string>Участники</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_8">
+       <item row="0" column="0">
+        <layout class="QVBoxLayout" name="verticalLayout_13" stretch="0,0">
+         <item>
+          <layout class="QGridLayout" name="gridLayout_9">
+           <item row="0" column="4" rowspan="2">
+            <widget class="QGroupBox" name="groupBox_10">
+             <property name="title">
+              <string>Тип и степень квалификации*</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_23">
+              <item>
+               <widget class="QRadioButton" name="KU_member">
+                <property name="text">
+                 <string>кю</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="Dan_member">
+                <property name="text">
+                 <string>дан</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QSpinBox" name="value_kval_member"/>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="0" column="6" rowspan="2" colspan="2">
+            <widget class="QGroupBox" name="groupBox_11">
+             <property name="title">
+              <string>Доп.информация</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_24">
+              <item>
+               <widget class="QLineEdit" name="stepen_member">
+                <property name="placeholderText">
+                 <string>  Разряд</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="city_member">
+                <property name="placeholderText">
+                 <string>  Город*</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="trainer_member">
+                <property name="placeholderText">
+                 <string>  Тренер*</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="org_member">
+                <property name="placeholderText">
+                 <string>  Организация*</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="0" column="0" rowspan="2" colspan="2">
+            <widget class="QGroupBox" name="groupBox_6">
+             <property name="title">
+              <string>ФИО</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_21">
+              <item>
+               <widget class="QLineEdit" name="last_name_member">
+                <property name="placeholderText">
+                 <string>  Фамилия*</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="first_name_member">
+                <property name="placeholderText">
+                 <string>  Имя*</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="patron_name_member">
+                <property name="placeholderText">
+                 <string>  Отчество</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="0" column="2" rowspan="2">
+            <widget class="QGroupBox" name="groupBox_9">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="title">
+              <string>Пол*</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_22">
+              <item>
+               <widget class="QRadioButton" name="gender_M_member">
+                <property name="text">
+                 <string>м</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="gender_J_member">
+                <property name="text">
+                 <string>ж</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="3" column="2" rowspan="2">
+            <widget class="QComboBox" name="categories_box">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <item>
+              <property name="text">
+               <string>Все</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Без категории</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="0" column="3" rowspan="2">
+            <widget class="QGroupBox" name="groupBox_13">
+             <property name="title">
+              <string>Возраст и дата рождения*</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_26" stretch="0,1">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>8</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_25">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>10</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="label_15">
+                  <property name="text">
+                   <string>Возраст</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSpinBox" name="age_member"/>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_27">
+                <property name="spacing">
+                 <number>2</number>
+                </property>
+                <property name="topMargin">
+                 <number>20</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="label_16">
+                  <property name="text">
+                   <string>Дата рождения</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QDateEdit" name="data_birthday_member"/>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="4" column="6" colspan="2">
+            <widget class="QPushButton" name="delete_this_member">
+             <property name="toolTip">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Для удаления участника выделите полную строку&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="toolTipDuration">
+              <number>0</number>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+background-color: #e2e2e2;
+border:1px solid #afafaf;
+}
+QPushButton:hover{
+background-color: #E0F2FF;
+border-color: #80C8FF;
+}
+QPushButton:pressed{
+background-color: #C2E4FF;
+border-color: #80C8FF;
+}</string>
+             </property>
+             <property name="text">
+              <string>Удалить участника</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QComboBox" name="teams_box">
+             <item>
+              <property name="text">
+               <string>Все команды</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="2" column="0" rowspan="3" colspan="2">
+            <widget class="QPushButton" name="create_category">
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+background-color: #e2e2e2;
+border:1px solid #afafaf;
+}
+QPushButton:hover{
+background-color: #E0F2FF;
+border-color: #80C8FF;
+}
+QPushButton:pressed{
+background-color: #C2E4FF;
+border-color: #80C8FF;
+}</string>
+             </property>
+             <property name="text">
+              <string>Распечатать категорию</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="3" rowspan="3">
+            <widget class="QComboBox" name="sorting_box">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <item>
+              <property name="text">
+               <string>Без сортировки</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>По фамилии</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>По имени</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>По возрасту</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="2" column="4" rowspan="3">
+            <widget class="QComboBox" name="asc_desc_box">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <item>
+              <property name="text">
+               <string>По возрастанию</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>По убыванию</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="2" column="6" rowspan="2" colspan="2">
+            <widget class="QPushButton" name="add_custom_member">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+background-color: #e2e2e2;
+border:1px solid #afafaf;
+}
+QPushButton:hover{
+background-color: #E0F2FF;
+border-color: #80C8FF;
+}
+QPushButton:pressed{
+background-color: #C2E4FF;
+border-color: #80C8FF;
+}</string>
+             </property>
+             <property name="text">
+              <string>Добавить участника</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QTableView" name="view_all_members"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_7">
+      <attribute name="title">
+       <string>Начало</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_10">
+       <property name="verticalSpacing">
+        <number>40</number>
+       </property>
+       <item row="0" column="2">
+        <spacer name="horizontalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="start_competition">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>350</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+background-color: #e2e2e2;
+border:1px solid #afafaf;
+}
+QPushButton:hover{
+background-color: #EDFDF0;
+border-color: #10DA20;
+}
+QPushButton:pressed{
+background-color: #CCFAD2;
+border-color: #10DA20;
+}</string>
+         </property>
+         <property name="text">
+          <string>Начать соревнования</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
